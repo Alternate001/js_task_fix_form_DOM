@@ -9,5 +9,5 @@ inputs.forEach((input) => {
   label.setAttribute('for', input.id);
   input.placeholder = input.name[0].toLocaleUpperCase() + input.name.slice(1);
   input.parentElement.append(label);
-  label.textContent = input.name;
+  label.textContent = input.name[0].toLocaleUpperCase() + input.name.slice(1);
 });
